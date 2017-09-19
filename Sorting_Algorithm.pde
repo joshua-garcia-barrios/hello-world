@@ -6,23 +6,6 @@ void setup() {
   background(0);
   textSize(45);
   size(1000, 1000);
-  //  initArray();
-  //  printArray(100);
-  // //************ DO BUBBLE SORT**************
-  //  printArray(200);
-  //  t = millis();
-  //  bubbleSort();
-  //  t=(millis()-t)/1000;
-  //  text("Bubble Sorted in: " + t + " Seconds",400,250); 
-  //  //************ DO SELECTION SORT**************
-  //  initArray();
-  //  printArray(300);
-  //   t = millis();
-  //  selectionSort();
-  //  t=(millis()-t)/1000;
-  //  println(t);
-  //  text(" Selection Sorted in: " + t + " Seconds",400,450); 
-  //  printArray(400);
   //************ DO INSERTION SORT**************
   initArray();
   printArray(300);
@@ -33,25 +16,6 @@ void setup() {
   text(" Insertion Sorted in: " + t + " Seconds", 200, 450); 
   printArray(400);
 }
-/*void draw() {
- for (int i = 0;i<6;i++) { 
- for (int j = 0; j<5;j++) {
- int s=255;
- if (mouseX>i*100+100&&mouseX<i*100+200&&mouseY>j*50+50&&mouseY<j*50+100) {
- s=155;
- }
- fill(s);
- rect(i*100+100, j*50+50, 100, 50);
- }
- }
- textSize(15);
- fill(0);
- text("Bubble Sort", 110, 125);
- text("Selection Sort", 102, 175);
- text("Insertion Sort", 102, 225);
- text("Quick Sort", 110, 275);
- }
- */
 //----------------------------------------------------------------------
 void quickSort(int low, int high) {
   int pivot = nArray[low+(high-low)/2];
@@ -130,4 +94,20 @@ void printArray(float y) {
     text(nArray[i], i*50+100, y);
   }
 }
-
+//  initArray();
+  //  printArray(100);
+  // //************ DO BUBBLE SORT**************
+  //  printArray(200);
+  //  t = millis();
+  //  bubbleSort();
+  //  t=(millis()-t)/1000;
+  //  text("Bubble Sorted in: " + t + " Seconds",400,250); 
+  //  //************ DO SELECTION SORT**************
+  //  initArray();
+  //  printArray(300);
+  //   t = millis();
+  //  selectionSort();
+  //  t=(millis()-t)/1000;
+  //  println(t);
+  //  text(" Selection Sorted in: " + t + " Seconds",400,450); 
+  //  printArray(400);
