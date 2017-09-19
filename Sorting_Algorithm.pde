@@ -1,13 +1,6 @@
 int size = 100000;
 int[] nArray = new int[size]; 
 int t = millis();
-/*boolean bubSelect=false;
- boolean selSelect = false;
- boolean insSelect
- boolean 
- boolean 
- boolean 
- */
 //----------------------------------------------------------------------
 void setup() {
   background(0);
